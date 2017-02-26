@@ -1,0 +1,116 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Michał}{Smyk}
+\title{Curriculum vitae}                               % optional, remove / comment the line if not wanted
+%\address{Wrocław}{postcode city}{Poland}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+%\phone[mobile]{+48~(234)~567~890}                   % optional, remove / comment the line if not wanted
+\email{kontakt@smyk.it}                               % optional, remove / comment the line if not wanted
+\homepage{www.smyk.it}                         % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2015--current}{Master of Science}{Wrocław University of Technology}{Wrocław}{}{Computer Science, Specialization: Intelligent Information Systems}  % arguments 3 to 6 can be left empty
+\cventry{2012--2015}{Bachelor of Science}{Wrocław University of Technology}{Wrocław}{\textit{5.0}}{Computer Science}
+
+\section{Master thesis}
+\cvitem{title}{\emph{Methods for text extraction on the basis of film soundtracks}}
+\cvitem{supervisor}{Professor Ngoc Thanh Nguyen Ph.D., D.Sc.}
+\cvitem{description}{Analysing of Automatic Speech Recognition solutions using Neural Networks for generating subtitles for movies.}
+
+\section{Experience}
+\subsection{Vocational}
+\cventry{2016--current}{.NET Developer}{Credit Suisse}{Wrocław}{}{C\# Web Applications Development using ASP.NET MVC 5 with Oracle Database \newline{}Responsible for C\# back-end, jQuery based front-end and Oracle database development.}
+\cventry{2015--2016}{Junior .NET Developer}{Credit Suisse}{Wrocław}{}{C\# Web Applications Development using ASP.NET MVC 5 with Oracle Database \newline{}Responsible for C\# back-end, jQuery based front-end and Oracle database development.}
+\cventry{2014--2015}{Technician}{Wrocław University of Technology}{Wrocław}{}{C\# Web Applications Development using ASP.NET MVC 5 with MS SQL database (Entity Framework) \newline{}I was mostly responsible for WCF Data Services and SignalR based functionalities implementation based on Service Oriented Architecture.}
+\subsection{Miscellaneous}
+\cventry{2014--2016}{Chairman}{Akademickie Stowarzyszenie Informatyczne}{Wrocław}{}{Chairman of Academic IT Association student organization on Wrocław University of Technology}
+\cventry{2013--current}{Technical Crew Member}{NiuCon Team}{Wrocław}{}{I am responsible for technical during Japanese culture/gaming Conventions organized in Wrocław. Since 2017 coordinator of technical team for NiuCon Events.}
+
+\section{Languages}
+\cvitemwithcomment{Polish}{Fluent}{Native speaker}
+\cvitemwithcomment{English}{Fluent}{Certified by Certificate in Advanced English(C1)}
+\cvitemwithcomment{Japanese}{Basic level}{One semestr during college, later self-learning}
+\cvitemwithcomment{French}{Basic level}{One semester during college}
+
+\section{Computer skills}
+\cvdoubleitem{Efficient in}{C\#, Python}{Frameworks}{ASP.NET}
+\cvdoubleitem{Confident in}{PL/SQL, JavaScript}{Frameworks}{jQuery}
+\cvdoubleitem{Basic in}{Java, C++} {}{}
+
+\section{Interests}
+\cvitem{Artificial Intelligence}{I am interested in Artificial Inteligence and Big Data solutions. I am learning those technologies, mostly using Python language.}
+\cvitem{Japanese Culture}{I enjoy learning about culture of this country, and would like to travel there sometime in a future.}
+\cvitem{Swimming}{My favorite form of active relax.}
+\cvitem{Music}{I enjoy learning about music, and also sometimes play on guitar. I used to play drums, to which I would like to go back in a future.}
+\cvitem{Cooking}{I like to cook in my free time. Mostly I am trying to experiment with Asian cuisine, but I am also learning other styles of cooking. I am mostly focused on main dishes and cakes.}
+
+\section{My Portfolio}
+\cvlistitem{Examples of my off-work projects are available at my GitHub account (github.com/Azkel)}
+
+\section{Certificates and trainings}
+\cvlistitem{CS100.1x: Introduction to Big Data with Apache Spark - edX Verified Certficiate - July 2016}
+\cvlistitem{CS190.1x: Scalable Machine Learning - edX Verified Certficiate - August 2015}
+\cvlistitem{ASP.NET MVC 5 Training by Microsoft Certified Trainer - January 2016}
+
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+\end{document}
+
+
+%% end of file `template.tex'.
