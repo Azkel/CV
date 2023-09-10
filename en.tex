@@ -19,7 +19,7 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.9]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -27,6 +27,7 @@
 \name{Michał}{Smyk}
 \title{Curriculum vitae}                               % optional, remove / comment the line if not wanted
 \email{contact@smyk.it}                               % optional, remove / comment the line if not wanted
+%\phone{+48 530 815 476}
 \homepage{www.smyk.it}                         % optional, remove / comment the line if not wanted
 \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 
@@ -46,43 +47,50 @@
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
-I hereby give consent for my personal data to be processed for the purpose of conducting recruitment.
 
 \section{Experience}
 \subsection{Vocational}
-\cventry{2020--current}{Lead Software Engineer}{\href{https://www.unit4.com/}{Unit4 Poland}}{Wrocław}{}{
+\cventry{2022 - now}{Lead DevOps Engineer}{\href{https://www.softserveinc.com/en-us}{SoftServe Inc}}{Wrocław}{}{
+Responsibilities: Providing consulting services for customers, growing team of DevOps engineers in terms of tech skills.\newline{} 
+As I am working here as a contractor, my stack depends on the customer to which I am currently delegated. Mostly Azure cloud and all services related to it.
+}
+\cventry{2020-2022}{Lead Software Engineer}{\href{https://www.unit4.com/}{Unit4 Poland}}{Wrocław}{}{
 Responsibilities: Working within Unit4 DevOps Practices department, responsible for improving DevOps-related processes within company.\newline{} 
 Technologies: \textit{ASP.NET Core (.NET 5/6)}, \textit{React (TypeScript)}\newline{}
 DevOps stack: \textit{Azure DevOps (YAML pipelines), Azure Cloud}
 }
-\cventry{2018--2020}{Software Engineer}{\href{https://www.unit4.com/}{Unit4 Poland}}{Wrocław}{}{
+\cventry{2018-2020}{Software Engineer}{\href{https://www.unit4.com/}{Unit4 Poland}}{Wrocław}{}{
 Responsibilities: Development \& project management of Unit4 Higher Education software, with focus on CI and CD tooling. Domain lead for Platform teams since October 2019, area product owner for DevOps topics. \newline{} 
 Technologies: \textit{ASP.Net MVC 5}, \textit{ASP.NET Core}\newline{}
 DevOps stack: \textit{TeamCity}, \textit{Octopus}, \textit{Azure DevOps}, Azure Cloud\newline{}
 }
-\cventry{2016--2018}{.NET Developer}{\href{https://www.credit-suisse.com}{Credit Suisse}}{Wrocław}{}{
+\cventry{2016-2018}{.NET Developer}{\href{https://www.credit-suisse.com}{Credit Suisse}}{Wrocław}{}{
 	Responsibilities: Full-stack web developer, IT Product Owner\newline{} 
 	Technologies: \textit{ASP.Net MVC 5, jQuery}\newline{}
 	DevOps stack: \textit{TeamCity}, \textit{Team Foundation Server 2012} 
 }
-\cventry{2015--2016}{Junior .NET Developer}{\href{https://www.credit-suisse.com}{Credit Suisse}}{Wrocław}{}{}
-\cventry{2014-- 2015}{Technician}{\href{https://pwr.edu.pl/}{Wrocław University of Technology}}{Wrocław}{}{
+\cventry{2015-2016}{Junior .NET Developer}{\href{https://www.credit-suisse.com}{Credit Suisse}}{Wrocław}{}{}
+\cventry{2014-2015}{Technician}{\href{https://pwr.edu.pl/}{Wrocław University of Technology}}{Wrocław}{}{
 Responsibiities: Back-end web development, database development\newline{} 
 Back-end technologies: \textit{ASP.Net MVC 5}, \textit{Windows Communication Foundation} 
 }
 
 \section{Education}
-\cventry{2016--2017}{Master of Science}{\href{https://pwr.edu.pl/}{Wrocław University of Technology}}{Computer Science}{}{} % arguments 3 to 6 can be left empty
-\cventry{2012--2015}{Bachelor of Science}{\href{http://pwr.edu.pl/}{Wrocław University of Technology}}{Computer Science}{}{}
+\cventry{2016-2017}{Master of Science}{\href{https://pwr.edu.pl/}{Wrocław University of Technology}}{Computer Science}{}{} % arguments 3 to 6 can be left empty
+\cventry{2012-2015}{Bachelor of Science}{\href{http://pwr.edu.pl/}{Wrocław University of Technology}}{Computer Science}{}{}
 
 \section{Certificates}
-\cvlistitem{\href{https://smyk.it/files/ADA.pdf}{Microsoft Certified Azure Developer Associate} - 2020}
-\cvlistitem{\href{https://smyk.it/files/PSMI.pdf}{Professional Scrum Master I} - 2018}
-\cvlistitem{\href{https://smyk.it/files/MCSD.pdf}{Microsoft Certified Solution Developer - App Builder} - 2018}
-
+\cvlistdoubleitem{Microsoft - Azure Solutions Architect}{Microsoft - DevOps Engineer}
+\cvlistdoubleitem{Microsoft - Azure Administrator}{Microsoft - Identity and Access Administrator}
+\cvlistdoubleitem{Microsoft - Azure Developer}{Certified Kubernetes Administrator (CKA)}
+\cvlistdoubleitem{HashiCorp - Terraform Associate}{Professional Scrum Master I}
 \section{Languages}
 \cvitemwithcomment{Polish}{Fluent}{Native speaker}
 \cvitemwithcomment{English}{Fluent}{\href{http://smyk.it/files/CAE.jpg}{Certificate in Advanced English (C1)}}
+\cvitemwithcomment{Japanese}{Basic}{}
+
+\pagebreak
+
 
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
